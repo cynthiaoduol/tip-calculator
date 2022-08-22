@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Prompt:wght@600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <title>Tip Calculator | Frontend Mentor</title>
+</head>
+
+<body class="bg-cyan-100 flex items-center justify-center">
+    <main class="container flex flex-col items-center">
+        <h1 class="text-slate-600 text-center tracking-widest p-10 animate-pulse -rotate-6">
+            TIP<br />CALC
+        </h1>
+        <div class="bg-white rounded-3xl p-8 w-full max-w-4xl md:flex" id="calculator">
+            <section class="pb-8 md:pb-0 md:pr-8 md:flex-1" id="user-inputs">
+                <div class="flex flex-col pb-8">
+                    <label class="text-slate-500 text-lg" for="bill">Bill</label>
+                    <i class="fa-solid fa-dollar-sign absolute pt-9 pl-3 text-slate-300 text-base"></i>
+                    <input
+                        class="bg-slate-100 text-cyan-900 text-right rounded-md focus:outline-teal-400 shadow-md cursor-pointer p-1 text-lg hover:bg-slate-200"
+                        id="bill" name="bill" type="number" min="0" step="5.00" max="9999" placeholder="0.00"
+                        required />
+                </div>
+                <div class="grid grid-cols-2 gap-3 pb-8 sm:grid-cols-3">
+                    <label class="text-slate-500 col-span-full text-lg" for="tip-15">Select Tip %</label>
+                    <input
+                        class="bg-cyan-900 text-white rounded-md cursor-pointer transition-colors duration-200 shadow-md p-1 text-lg hover:bg-cyan-200 hover:text-cyan-900"
+                        id="tip-5" name="tip-5" type="button" value="5%" />
+                    <input
+                        class="bg-cyan-900 text-white rounded-md cursor-pointer transition-colors duration-200 shadow-md p-1 text-lg hover:bg-cyan-200 hover:text-cyan-900"
+                        id="tip-10" name="tip-10" type="button" value="10%" />
+                    <input
+                        class="bg-cyan-900 text-white rounded-md cursor-pointer transition-colors duration-200 shadow-md p-1 text-lg hover:bg-cyan-200 hover:text-cyan-900"
+                        id="tip-15" name="tip-15" type="button" value="15%" />
+                    <input
+                        class="bg-cyan-900 text-white rounded-md cursor-pointer transition-colors duration-200 shadow-md p-1 text-lg hover:bg-cyan-200 hover:text-cyan-900"
+                        id="tip-25" name="tip-25" type="button" value="25%" />
+                    <input
+                        class="bg-cyan-900 text-white rounded-md cursor-pointer transition-colors duration-200 shadow-md p-1 text-lg hover:bg-emerald-200 hover:text-cyan-900"
+                        id="tip-50" name="tip-50" type="button" value="50%" />
+                    <input
+                        class="bg-slate-100 text-slate-500 rounded-md text-center focus:outline-teal-400 transition-colors duration-200 shadow-md cursor-pointer p-1 text-lg hover:bg-slate-200 hover:text-cyan-900"
+                        id="tip-custom" name="tip-custom" type="number" min="0" step="5" max="999"
+                        placeholder="Custom" />
+                </div>
+                <div class="flex flex-col">
+                    <div class="width-full flex justify-between">
+                        <label class="text-slate-500 text-lg" for="party">Number of People</label>
+                        <i class="fa-solid fa-user absolute pt-9 pl-3 text-slate-300 text-base"></i>
+                        <span id="people-warning" class="text-rose-500 text-sm pt-2 hidden">Can't be zero</span>
+                    </div>
+                    <input
+                        class="bg-slate-100 text-cyan-900 text-right rounded-md focus:outline-teal-400 shadow-md cursor-pointer p-1 text-lg hover:bg-slate-200"
+                        id="party" name="party" type="number" min="1" step="1" max="999" placeholder="0" required />
+                </div>
+            </section>
+            <section class="bg-cyan-900 p-8 rounded-xl md:flex-1 md:flex md:flex-col md:justify-between" id="output">
+                <div>
+                    <div class="pb-8 flex justify-between">
+                        <div>
+                            <h2 class="text-white text-lg">Tip Amount</h2>
+                            <h3 class="text-slate-400 text-base">/ person</h3>
+                        </div>
+                        <p class="text-teal-400 pt-1 text-3xl">
+                            $<span id="tip-amount">0.00</span>
+                        </p>
+                    </div>
+                    <div class="pb-8 flex justify-between">
+                        <div>
+                            <h2 class="text-white text-lg">Total</h2>
+                            <h3 class="text-slate-400 text-base">/ person</h3>
+                        </div>
+                        <p class="text-teal-400 pt-1 text-3xl">
+                            $<span id="total-amount">0.00</span>
+                        </p>
+                    </div>
+                </div>
+
+                <input
+                    class="bg-cyan-800 text-cyan-900 w-full rounded-md transition-colors duration-200 shadow-md p-1 text-lg"
+                    id="reset" name="reset" type="reset" value="RESET" />
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
