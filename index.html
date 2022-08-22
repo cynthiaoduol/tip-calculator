@@ -16,8 +16,9 @@
 <body>
 
   <main class="main-container">
-    <h2>SPLI</h2>
-    <h2>TTER</h2>
+    <!-- <h2>SPLI</h2>
+    <h2>TTER</h2> -->
+    <img src="images/logo.svg" alt="">
     <div class="card">
       <section class="card-bill">
         <section class="bill-value">
@@ -25,7 +26,7 @@
             <h5>Bill</h5>
           </header>
           <div class="bill-input">
-            <img src="/images/icon-dollar.svg" alt="dollar sign" />
+            <img src="images/icon-dollar.svg" alt="dollar sign" />
             <input type="number" id="billAmount" name="billAmount" min="1" max="1000000" placeholder="0" />
           </div>
         </section>
@@ -41,10 +42,10 @@
             <button id="button">50</button> -->
 
 
-            <button id="fivePercent" data-tip-percentage="5">5%</button>
-            <button id="tenPercent" data-tip-percentage="10">10%</button>
-            <button id="fifteenPercent" data-tip-percentage="15">15%</button>
-            <button id="twentyFivePercent" data-tip-percentage="25">25%</button>
+            <button id="fivePercent" data-tip-percentage="5" class="btn-percentage">5%</button>
+            <button id="tenPercent" data-tip-percentage="10" class="btn-percentage">10%</button>
+            <button id="fifteenPercent" data-tip-percentage="15" class="btn-percentage">15%</button>
+            <button id="twentyFivePercent" data-tip-percentage="25" class="btn-percentage">25%</button>
             <button id="fiftyPercent" data-tip-percentage="50">50%</button>
             <input type="number" id="customtip" name="customtip" min="0" max="1000000" placeholder="Custom" />
           </div>
@@ -55,7 +56,7 @@
             <!-- <h5 class="error" id="errorMessage">Can't be zero</h5> -->
           </header>
           <div class="party-size-input">
-            <img src="/images/icon-person.svg" alt="people" />
+            <img src="images/icon-person.svg" alt="people" />
             <input type="number" id="partySize" name="partySize" min="1" max="1000000" placeholder="0"/>
           </div>
         </section>

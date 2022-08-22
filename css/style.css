@@ -30,13 +30,8 @@
     flex-direction: column;
 }
 
-h2 {
-    letter-spacing: .5em;
-    color: var(--dark-grayish-cyan);
-}
-
 .card {
-    margin-top: 2em;
+    margin-top: 4em;
     /* width: 100%; */
     padding: 30px;
     border-top-left-radius: 25px;

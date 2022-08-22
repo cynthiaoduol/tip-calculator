@@ -40,7 +40,7 @@ tipCustom.addEventListener("input", function () {
 
 const calculate = function () {
     tipAmount.innerHTML = ((parseInt(billInput.value) * tipValue) / parseInt(partyInput.value)).toFixed(2)
-    totalAmount.innerHTML = (parseInt(billInput.value) / parseInt(partyInput.value)) + parseInt(tipAmount.innerHTML)
+    totalAmount.innerHTML = ((parseInt(billInput.value) / parseInt(partyInput.value)) + parseInt(tipAmount.innerHTML)).toFixed((2))
 };
 
 reset.addEventListener("click", function () {
