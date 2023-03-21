@@ -46,7 +46,8 @@
 
 @media only screen and (min-width: 500px) {
     .card {
-        max-width: 950px;
+        max-width: 950    /* border-color: var(--strong-cyan); */
+        px;
         max-height: 500px;
         flex-direction: row;
         gap: 35px;
@@ -68,7 +69,7 @@
 }
 
 
-h5 {
+.bill-party-size h5 {
     margin: 0.3rem 0 0.3rem 0;
     color: var(--dark-grayish-cyan);
 }
@@ -129,6 +130,7 @@ h5 {
 
 .tip-options>button:hover {
     cursor: pointer;
+    
 }
 
 #customTip {
@@ -187,20 +189,19 @@ h5 {
     justify-content: space-between;
 }
 
-.tip-action {
+.reset-action {
     position: relative;
     min-height: 8.5rem;
 }
 
 
-.tip-action>button {
+.reset-action>button {
     width: 100%;
     min-height: 2.5rem;
     border-radius: 5px;
     background-color: var(--strong-cyan);
     color: var(--very-dark-cyan);
     border: none;
-    /* border-color: var(--strong-cyan); */
     position: absolute;
     bottom: 0;
     font-weight: 700;
@@ -209,7 +210,7 @@ h5 {
     text-transform: uppercase;
 }
 
-.tip-action>button:hover {
+.reset-action>button:hover {
     cursor: pointer;
 }
 

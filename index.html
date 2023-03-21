@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
-  <title>Frontend Mentor | Tip calculator app</title>
+  <title>Tip calculator</title>
 
 
 </head>
@@ -35,18 +35,11 @@
             <h5>Select Tip %</h5>
           </header>
           <div class="tip-options">
-            <!-- <button id="button">5</button>
-            <button id="button">10</button>
-            <button id="button">15</button>
-            <button id="button">25</button>
-            <button id="button">50</button> -->
-
-
             <button id="fivePercent" data-tip-percentage="5" class="btn-percentage">5%</button>
             <button id="tenPercent" data-tip-percentage="10" class="btn-percentage">10%</button>
             <button id="fifteenPercent" data-tip-percentage="15" class="btn-percentage">15%</button>
             <button id="twentyFivePercent" data-tip-percentage="25" class="btn-percentage">25%</button>
-            <button id="fiftyPercent" data-tip-percentage="50">50%</button>
+            <button id="fiftyPercent" data-tip-percentage="50" class="btn-percentage">50%</button>
             <input type="number" id="customtip" name="customtip" min="0" max="1000000" placeholder="Custom" />
           </div>
         </section>
@@ -76,7 +69,7 @@
           </span>
           <span id="totalPerPerson" class="calculated-values">$0.00</span>
         </section>
-        <section class="tip-action">
+        <section class="reset-action">
           <!-- <button onclick="resetValues()">Reset</button> -->
           <button id="reset">Reset</button>
         </section>

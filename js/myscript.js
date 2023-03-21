@@ -10,6 +10,9 @@ const totalAmount = document.getElementById("totalPerPerson");
 const billInput = document.getElementById("billAmount");
 const partyInput = document.getElementById("partySize");
 
+const buttons = document.querySelectorAll(".tip-options > button");
+// console.log(buttons)
+
 let tipValue;
 
 tip5.addEventListener("click", function () {
@@ -51,4 +54,13 @@ reset.addEventListener("click", function () {
     tipValue = 0;
     tipCustom.value = "";
 })
+// buttons.forEach((button) => {
+//     console.log(button)
+//     button.classList.remove("selected");
+//     button.addEventListener('click', ()=>{
+//         button.classList.add("selected")
+        
+//     })
+//   });
+
 
